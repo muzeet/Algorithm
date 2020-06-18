@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf353f58-bb83-4c72-9b69-38f3458fb1bc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/剑指Offer/单例实现/Singleton1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/剑指Offer/单例实现/Singleton2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/剑指Offer/单例实现/Singleton3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/其他分类/字符串的全排列和全组合/Permutation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/力扣/墙砖554/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +41,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/力扣/墙砖554" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -52,6 +52,9 @@
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="Leetcode.生命游戏289" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\Workshop\Algorithm\src\力扣\墙砖554" />
     </key>
   </component>
   <component name="RunManager" selected="Application.LongestSubstringWithoutReduplication">
@@ -112,8 +115,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586262622552</updated>
+      <workItem from="1592495748866" duration="198000" />
+      <workItem from="1592495965028" duration="196000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="468" y="199" width="800" height="677" key="#Project_Structure" timestamp="1586262648114">
@@ -152,9 +160,10 @@
       <screen x="67" y="27" width="1613" height="1023" />
     </state>
     <state x="362" y="172" width="1024" height="845" key="SettingsEditor/67.27.1613.1023@67.27.1613.1023" timestamp="1590588957516" />
-    <state x="529" y="366" key="com.intellij.ide.util.TipDialog" timestamp="1586262628369">
-      <screen x="67" y="27" width="1613" height="1023" />
+    <state x="733" y="467" key="com.intellij.ide.util.TipDialog" timestamp="1592495964472">
+      <screen x="0" y="0" width="2560" height="1410" />
     </state>
+    <state x="733" y="467" key="com.intellij.ide.util.TipDialog/0.0.2560.1410@0.0.2560.1410" timestamp="1592495964472" />
     <state x="529" y="366" key="com.intellij.ide.util.TipDialog/67.27.1613.1023@67.27.1613.1023" timestamp="1586262628369" />
     <state x="476" y="371" width="672" height="678" key="search.everywhere.popup" timestamp="1591339662109">
       <screen x="67" y="27" width="1613" height="1023" />
