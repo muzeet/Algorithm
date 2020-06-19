@@ -7,7 +7,7 @@ import java.util.Set;
  * 3. 无重复字符的最长子串
  * 给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。
  *
- * 示例 1:
+ * 示例 1:3
  *
  * 输入: "abcabcbb"
  * 输出: 3
@@ -41,6 +41,7 @@ public class LongestSubstringWithoutReduplication {
             if (i > 0) {
                 set.remove(s.charAt(i - 1));
             }
+            // 上一个窗口失败，j回到了i+1的位置
             int j = i + 1;
 
             while (j < n && !set.contains(s.charAt(j))) {

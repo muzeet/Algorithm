@@ -27,7 +27,7 @@ import java.util.Map;
  *
  *
  * 思路： 前缀和
- * 我们令 P[i] = A[0] + A[1] + ... + A[i]P[i]=A[0]+A[1]+...+A[i]。那么每个连续子数组的和 \textit{sum}(i, j)sum(i,j) 就可以写成 P[j] - P[i-1]P[j]−P[i−1]（其中 0 < i < j0<i<j）的形式。此时，判断子数组的和能否被 KK 整除就等价于判断 (P[j] - P[i-1]) \bmod K == 0(P[j]−P[i−1])modK==0，根据 同余定理，只要 P[j] \bmod K == P[i-1] \bmod KP[j]modK==P[i−1]modK，就可以保证上面的等式成立。
+ * 我们令 P[i] = A[0] + A[1] + ... + A[i]P[i]=A[0]+A[1]+...+A[i]。那么每个连续子数组的和sum(i,j) 就可以写成 P[j] - P[i-1]（其中 0 < i < j0<i<j）的形式。此时，判断子数组的和能否被 K 整除就等价于判断 (P[j] - P[i-1]) mod K == (P[j]−P[i−1])modK==0，根据 同余定理，只要 P[j] \bmod K == P[i-1] \bmod KP[j]modK==P[i−1]modK，就可以保证上面的等式成立。
  *
  */
 
@@ -43,6 +43,8 @@ public class SumDivByK {
         int arrays = 0;
         for (int num: A) {
             sum += num;
+            // 同模和同余的区别
+            // 会出现k = 5, 则 -1 和 4 同模
             int mod = (sum % K + K) % K;
             if (map.containsKey(mod)) {
                 int ans = map.get(mod);
