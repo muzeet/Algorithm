@@ -52,5 +52,6 @@ public class PrintListFromTailToHead {
             ListNode pNodes = stack.pop();
             res.add(pNodes.val);
         }
+        return res;
     }
 }

@@ -8,6 +8,7 @@ import java.util.List;
 public class PreOrder {
 
     List<Integer> list = new ArrayList<>();
+    // 递归
     public List<Integer> preOrder(BinaryTreeNode tree) {
         if (tree != null) {
             list.add(tree.val);
@@ -20,7 +21,8 @@ public class PreOrder {
 
     // 非递归
     public List<Integer> preOrder2(BinaryTreeNode tree) {
-
+        List<Integer> list = new ArrayList<>();
+        return list;
     }
 
 
