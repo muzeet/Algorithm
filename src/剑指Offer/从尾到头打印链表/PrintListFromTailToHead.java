@@ -1,18 +1,11 @@
 package 剑指Offer.从尾到头打印链表;
 
+import 其他分类.链表.ListNode;
+
 import javax.lang.model.type.ArrayType;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
-
-class ListNode {
-    int val;
-    ListNode next = null;
-
-    ListNode(int val) {
-        this.val = val;
-    }
-}
 
 public class PrintListFromTailToHead {
 
