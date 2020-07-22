@@ -1,6 +1,5 @@
 package 剑指Offer.重建二叉树;
 
-import jdk.nashorn.internal.ir.BinaryNode;
 import 其他分类.二叉树.BinaryTreeNode;
 
 import java.util.Arrays;
@@ -57,11 +56,33 @@ public class ReConstructBinaryTree {
         return construct(pre, 0, pre.length - 1, in, 0, in.length - 1);
     }
 
-    /*
     public BinaryTreeNode construct(int [] pre,int [] in) throws Exception {
-        return null;
+        if (pre == null || in == null) {
+            return null;
+        }
+
+        if (pre.length == 0 || in.length == 0 || pre.length != in.length) {
+            return null;
+        }
+
+        int rootInOrder = 0;
+        while (rootInOrder < in.length && in[rootInOrder] != pre[0]) {
+            rootInOrder++;
+        }
+
+        if (rootInOrder == in.length) {
+            throw new Exception("the input is invalid.");
+        }
+
+        BinaryTreeNode node = new BinaryTreeNode(pre[0]);
+        node.left = node.right = null;
+
+        int preLen = rootInOrder;
+        node.left = construct(Arrays.copyOfRange(pre, 1, preLen + 1), Arrays.copyOfRange(in, 0, preLen));
+        node.right = construct(Arrays.copyOfRange(pre, preLen + 1, pre.length), Arrays.copyOfRange(in, rootInOrder + 1, in.length));
+        return node;
     }
-    */
+
 
     public static void main(String[] args) {
         // int[] pre = {1,2,4,7,3,5,6,8};
@@ -71,7 +92,7 @@ public class ReConstructBinaryTree {
         int[] in = {3, 2, 4, 1, 6, 5, 7};
         ReConstructBinaryTree reconstruct = new ReConstructBinaryTree();
         try {
-            reconstruct.reConstructBinaryTree(pre, in);
+            reconstruct.construct(pre, in);
         } catch (Exception e) {
             e.printStackTrace();
         }
