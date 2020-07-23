@@ -1,7 +1,7 @@
 # 忽略掉以下文件
 
 # 忽略Algorithm.iml
-*.Algorithm.iml
+*.iml
 
 # 忽略.idea
 /.idea/
