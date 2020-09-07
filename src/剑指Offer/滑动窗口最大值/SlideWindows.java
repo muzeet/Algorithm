@@ -25,11 +25,13 @@ package 剑指Offer.滑动窗口最大值;
  *
  * 注意：本题与主站 239 题相同：https://leetcode-cn.com/problems/sliding-window-maximum/
  *
+ * 思路: 单调队列
+ *
  *
  */
 public class SlideWindows {
 
-    public int getMax() {
+    public int[] maxSlidingWindow(int[] nums, int k) {
 
     }
 }
