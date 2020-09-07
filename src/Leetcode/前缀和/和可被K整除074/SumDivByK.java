@@ -1,4 +1,4 @@
-package Leetcode.和可被K整除074;
+package Leetcode.前缀和.和可被K整除074;
 
 import java.util.HashMap;
 import java.util.Map;
