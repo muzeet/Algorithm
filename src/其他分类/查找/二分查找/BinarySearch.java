@@ -32,4 +32,26 @@ public class BinarySearch {
         return -1;
     }
 
+    public int search2(int[] array, int target) throws Exception {
+        if (array == null || array.length == 0) {
+            throw new Exception("The input is invalid.");
+        }
+
+        int low = 0;
+        int high = array.length;
+        int mid;
+        while (low < high) {
+            mid = (low + high) / 2;
+            if (array[mid] < target) {
+                low = mid + 1;
+            } else if (array[mid] > target) {
+                high = mid - 1;
+            } else {
+                return array[mid];
+            }
+
+        }
+        return -1;
+    }
+
 }
